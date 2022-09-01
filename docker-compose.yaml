@@ -2,14 +2,13 @@ version: '3.8'
 services:
   db:
     image: postgres:14.5-alpine
-    restart: always
+    container_name: postgres_container
     environment:
+      - POSTGRES_DB=library
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASSWORD}
     ports:
       - '5432:5432'
-    volumes: 
-      - db:/var/lib/postgresql/data
-volumes:
-  db:
-    driver: local
+    volumes:
+      - ./database/books_table.sql:/docker-entrypoint-initdb.d/books_table.sql
+      - ./database/populate_books.sql:/docker-entrypoint-initdb.d/populate_books.sql
