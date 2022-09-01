@@ -23,5 +23,5 @@ func main() {
 	router.Get("/", handlers.List)
 	router.Get("/{id}", handlers.Get)
 
-	http.ListenAndServe(fmt.Sprintf("%s", configs.GetServerPort()), router)
+	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), router)
 }

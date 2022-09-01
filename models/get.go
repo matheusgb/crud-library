@@ -11,7 +11,7 @@ func Get(id int) (book Book, err error) {
 
 	row := connection.QueryRow(`SELECT * FROM books WHERE id=$1`, id)
 
-	err = row.Scan(&book.Title, &book.Category, &book.Author, &book.Synopsis)
+	err = row.Scan(&book.ID, &book.Title, &book.Category, &book.Author, &book.Synopsis)
 
 	return
 }
