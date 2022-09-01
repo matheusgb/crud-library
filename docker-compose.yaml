@@ -10,5 +10,5 @@ services:
     ports:
       - '5432:5432'
     volumes:
-      - ./database/books_table.sql:/docker-entrypoint-initdb.d/books_table.sql
-      - ./database/populate_books.sql:/docker-entrypoint-initdb.d/populate_books.sql
+      - ./database/migrations/books_table.sql:/docker-entrypoint-initdb.d/books_table.sql
+      - ./database/migrations/populate_books.sql:/docker-entrypoint-initdb.d/populate_books.sql
