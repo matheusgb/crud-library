@@ -10,12 +10,9 @@ import (
 )
 
 func OpenConnection() (*sql.DB, error) {
-	config, err := configs.LoadConfig(".")
-	if err != nil {
-		log.Fatal("Cannot load config:", err)
-	}
+	config := configs.GetDB()
 
-	stringConnection := fmt.Sprintf("user=%s password=%s sslmode=disable", config.DBUser, config.DBPassword)
+	stringConnection := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable", config.Host, config.Port, config.User, config.Pass, config.Database)
 
 	connection, err := sql.Open("postgres", stringConnection)
 	if err != nil {
