@@ -56,7 +56,6 @@ go run main.go
 
 *Retorno:*
 ```
-
 {
 	"id": 1,
 	"title": "Título Genérico",
@@ -71,7 +70,6 @@ go run main.go
 
 *Corpo esperado na requisição:*
 ```
-
 {	
 	"title": "Título Qualquer",
 	"category": "Aventura",
@@ -86,7 +84,6 @@ go run main.go
 	"Error": false,
 	"Message": "Book inserted! ID: 3"
 }
-
 ```
 #
 
@@ -94,7 +91,6 @@ go run main.go
 
 *Corpo esperado na requisição:*
 ```
-
 {	
 	"title": "Título editado",
 	"category": "Fantasia",
@@ -109,7 +105,6 @@ go run main.go
 	"Error": false,
 	"Message": "Successfully updated!"
 }
-
 ```
 
 #
@@ -119,12 +114,10 @@ go run main.go
 
 *Retorno:*
 ```
-
 {
 	"Error": false,
 	"Message": "Successfully deleted!"
 }
-
 ```
 
 ## 🖇️ Considerações sobre o projeto
