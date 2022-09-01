@@ -8,7 +8,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ## 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+Série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
 Clone o repositório:
 
@@ -32,8 +32,8 @@ go run main.go
 
 `GET /` Lista todos os livros 
 
+*Retorno:*
 ```
-Retorno:
 
 [
 	{
@@ -52,12 +52,12 @@ Retorno:
 	}
 ]
 ```
-<br />
+#
 
 `GET /{id}` Lista o livro do id correspondente
 
+*Retorno:*
 ```
-Retorno:
 
 {
 	"id": 1,
@@ -67,12 +67,12 @@ Retorno:
 	"synopsis": "Um livro com sinopse"
 }
 ```
-<br />
+#
 
 `POST /` Adiciona um livro
 
+*Corpo esperado na requisição:*
 ```
-Corpo esperado da requisição:
 
 {	
 	"title": "Título Qualquer",
@@ -80,22 +80,22 @@ Corpo esperado da requisição:
 	"author": "Autor desconhecido",
 	"synopsis": "Um livro misterioso"
 }
+```
 
-
-Retorno:
-
+*Retorno:*
+```
 {
 	"Error": false,
 	"Message": "Book inserted! ID: 3"
 }
 
 ```
-<br />
+#
 
 `PUT /{id}` Edita um livro pelo id
 
+*Corpo esperado na requisição:*
 ```
-Corpo esperado da requisição:
 
 {	
 	"title": "Título editado",
@@ -103,10 +103,10 @@ Corpo esperado da requisição:
 	"author": "Autor editado",
 	"synopsis": "Um livro editado"
 }
+```
 
-
-Retorno:
-
+*Retorno:*
+```
 {
 	"Error": false,
 	"Message": "Successfully updated!"
@@ -114,13 +114,13 @@ Retorno:
 
 ```
 
-<br />
+#
 
 `DELETE /{id}` Deleta um livro pelo id
 
-```
 
-Retorno:
+*Retorno:*
+```
 
 {
 	"Error": false,
@@ -142,17 +142,25 @@ No desafio havia a possibilidade de escolher um banco de dados SQL (Postgres) ou
 
 Durante a execução do projeto aprendi bastante, nos primeiros dias de desenvolvimento busquei entender fundamentos da linguagem Golang para conseguir compreender melhor conteúdos diversos que pesquisei enquanto me deparava com alguma dúvida.
 
-Entendi o funcionamento do `go.mod` e consegui fazer uso de packages externos como `viper` (para setar variáveis de ambiente) e `chi` (para setar endpoints da API).
+Entendi o funcionamento do `go.mod` e consegui fazer uso de packages externos como `viper` (para setar variáveis de ambiente) e `chi` (para setar rotas da API).
 
 Tracei algumas semelhanças de Golang com Typescript, as tipagens, funções e interfaces funcionam de forma semelhante, isso trouxe certo conforto e melhor entendimento durante o projeto.
 
-Ter utilizado o `docker-compose` para criar o banco de dados, tabelas e popular as tabelas facilitou muito desenvolvimento.
+Ter utilizado o `docker-compose` para criar o banco de dados, tabelas e popular as mesmas, facilitou muito desenvolvimento.
 
 #
 
 ### Pontos de melhoria
 
 Por se tratar do primeiro contato com a liguagem e poucos dias de estudo, ainda há conceitos que não entendi completamente como: ponteiros, arquitetura, clean code, tratamento de erros e implementação de http codes no retorno das endpoints.
+
+#
+
+### Dificuldades encontradas
+
+Busquei fazer o uso somente do `.env`, porém tive dificuldades em sua impletementação no `viper`, então segui um tutorial que usava o `.toml` e deixei o `.env` unicamente para o `docker-compose`.
+
+Me deparei com um bug no `main.go`. Quando tentava inicializar a aplicação com `go run main.go`, ela quebrava e não demonstrava erro algum. Depois de horas descobri que foi um `:` que esqueci de colocar no `ListenAndServe`.
 
 ---
 ⌨️ por [Matheus Gomes](https://www.linkedin.com/in/matheusgb/)
