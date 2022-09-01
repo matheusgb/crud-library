@@ -146,7 +146,12 @@ Ter utilizado o `docker-compose` para criar o banco de dados, tabelas e popular 
 
 ### Pontos de melhoria
 
-Por se tratar do primeiro contato com a liguagem e poucos dias de estudo, ainda há conceitos na linguagem que não entendi completamente como aplicar: ponteiros, arquitetura, clean code, tratamento de erros e implementação de http codes no retorno dos endpoints.
+Por se tratar do primeiro contato com a liguagem e poucos dias de estudo, ainda há conceitos que não entendi completamente como aplicar:
+* Ponteiros
+* Arquitetura
+* Clean code 
+* Tratamento de erros
+* Implementação de http codes no retorno dos endpoints
 
 #
 
