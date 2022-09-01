@@ -138,7 +138,7 @@ Durante a execução do projeto aprendi bastante, nos primeiros dias de desenvol
 
 Entendi o funcionamento do `go.mod` e consegui fazer uso de packages externos como `viper` (para setar variáveis de ambiente) e `chi` (para setar rotas da API).
 
-Tracei algumas semelhanças de Golang com Typescript, as tipagens, funções e interfaces funcionam de forma semelhante, isso trouxe certo conforto e melhor entendimento durante o projeto.
+Tracei algumas semelhanças de Golang com Typescript, as tipagens, funções e interfaces funcionam de formas semelhantes, isso trouxe certo conforto e melhor entendimento durante o projeto.
 
 Ter utilizado o `docker-compose` para criar o banco de dados, tabelas e popular as mesmas, facilitou muito desenvolvimento.
 
@@ -146,7 +146,7 @@ Ter utilizado o `docker-compose` para criar o banco de dados, tabelas e popular 
 
 ### Pontos de melhoria
 
-Por se tratar do primeiro contato com a liguagem e poucos dias de estudo, ainda há conceitos que não entendi completamente como: ponteiros, arquitetura, clean code, tratamento de erros e implementação de http codes no retorno das endpoints.
+Por se tratar do primeiro contato com a liguagem e poucos dias de estudo, ainda há conceitos na linguagem que não entendi completamente como aplicar: ponteiros, arquitetura, clean code, tratamento de erros e implementação de http codes no retorno dos endpoints.
 
 #
 
@@ -157,5 +157,5 @@ Busquei fazer o uso somente do `.env`, porém tive dificuldades em sua impleteme
 Me deparei com um bug no `main.go`. Quando tentava inicializar a aplicação com `go run main.go`, ela quebrava e não demonstrava erro algum. Depois de horas descobri que foi um `:` que esqueci de colocar no `ListenAndServe`.
 
 ---
-⌨️ por [Matheus Gomes](https://www.linkedin.com/in/matheusgb/)
+Desenvolvido por [Matheus Gomes](https://www.linkedin.com/in/matheusgb/)
  
