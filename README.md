@@ -1,4 +1,4 @@
-# Library
+# LibraryInGo
 
 CRUD desenvolvido para o desafio técnico da thagos. Nessa aplicação é possível cadastrar, editar, excluir e listar livros.
 
@@ -27,14 +27,12 @@ E inicialize a aplicação Golang:
 ```
 go run main.go
 ```
-
 ## 📌  Rotas e retornos dos endpoints
 
 `GET /` Lista todos os livros 
 
 *Retorno:*
 ```
-
 [
 	{
 		"id": 1,
