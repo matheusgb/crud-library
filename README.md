@@ -32,7 +32,7 @@ go run main.go
 ```
 ## 📌  Rotas e retornos dos endpoints
 
-`GET /` Lista todos os livros 
+`GET /` - Lista todos os livros 
 
 *Retorno:*
 ```
@@ -55,7 +55,7 @@ go run main.go
 ```
 #
 
-`GET /{id}` Lista o livro do id correspondente
+`GET /{id}` - Lista o livro do id correspondente
 
 *Retorno:*
 ```
@@ -69,7 +69,7 @@ go run main.go
 ```
 #
 
-`POST /` Adiciona um livro
+`POST /` - Adiciona um livro
 
 *Corpo esperado na requisição:*
 ```
@@ -90,7 +90,7 @@ go run main.go
 ```
 #
 
-`PUT /{id}` Edita um livro pelo id
+`PUT /{id}` - Edita um livro pelo id
 
 *Corpo esperado na requisição:*
 ```
@@ -112,7 +112,7 @@ go run main.go
 
 #
 
-`DELETE /{id}` Deleta um livro pelo id
+`DELETE /{id}` - Deleta um livro pelo id
 
 
 *Retorno:*
@@ -153,6 +153,7 @@ Por se tratar do primeiro contato com a liguagem e poucos dias de estudo, ainda 
 * Tratamento de erros
 * Implementação de http codes no retorno dos endpoints
 
+E no futuro, prentendo adicionar documentação `Swagger` a aplicação.
 #
 
 ### Dificuldades encontradas
