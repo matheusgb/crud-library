@@ -8,22 +8,25 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ## 🔧 Instalação
 
-Série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Clone o repositório:
+1. Clone o repositório e entre na pasta:
 
 ```
 git clone git@github.com:matheusgb/crud-library.git && cd crud-library
 ```
-Renomeie os arquivos `config.toml.example` e `.env.example` para `config.toml` e `.env` <br>
-<br>
-Rode o comando:
+<br />
+
+2. Renomeie os arquivos `config.toml.example` e `.env.example` para `config.toml` e `.env`
+
+<br />
+
+3. Rode o comando:
 ```
 docker compose up -d --build
 ```
 
-E inicialize a aplicação Golang:
+<br />
 
+4. E inicialize a aplicação Golang:
 ```
 go run main.go
 ```
