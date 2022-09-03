@@ -125,7 +125,7 @@ go run main.go
 
 ## 🖇️ Considerações sobre o projeto
 
-Primeiramente gostaria de agradecer ao Leonardo Magalhães e ao Christian Bittencort pela oportunidade de realizar esse desafio para a Thagos, gostei muito de desenvolver em Golang e do clima da conversa que tivemos, espero que eu atenda as expectativas para que ambos fatores se tornem rotineiros 😁.
+Primeiramente gostaria de agradecer ao Leonardo Magalhães e ao Christian Bittencort pela oportunidade de realizar esse desafio para a Taghos, gostei muito de desenvolver em Golang e do clima da conversa que tivemos, espero que eu atenda as expectativas para que ambos fatores se tornem rotineiros 😁.
 
 #
 
