@@ -1,6 +1,6 @@
 # LibraryInGo
 
-CRUD desenvolvido para o desafio técnico da Thagos. Nessa aplicação é possível cadastrar, editar, excluir e listar livros.
+CRUD desenvolvido para o desafio técnico da Taghos. Nessa aplicação é possível cadastrar, editar, excluir e listar livros.
 
 ## 🚀 Começando
 
